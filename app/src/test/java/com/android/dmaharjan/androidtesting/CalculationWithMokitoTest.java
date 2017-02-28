@@ -8,8 +8,6 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
 import static org.mockito.Mockito.when;
 
 /**
@@ -27,14 +25,12 @@ public class CalculationWithMokitoTest {
     public void testSum() {
         //Calculations calculations = mock(Calculations.class);
         when(calculations.sum(2, 3)).thenReturn(5);
-        assertEquals(calculations.sum(2, 3), 5);
     }
 
     @Test
     public void testProfit() {
         //  Calculations calculations = mock(Calculations.class);
         when(calculations.profit(300, 500)).thenReturn(true);
-        assertTrue(calculations.profit(300, 500));
     }
 
 }
